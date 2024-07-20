@@ -102,7 +102,6 @@
             }
         }
     </style>
-    <script src="https://<tu-usuario>.github.io/<tu-repositorio>/js/playerjs (1).js"></script> <!-- Incluye el archivo JavaScript del reproductor -->
 </head>
 <body>
     <div class="container">
@@ -185,7 +184,6 @@
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Player</title>
-                    <script src="https://<tu-usuario>.github.io/<tu-repositorio>/js/playerjs (1).js"></script>
                     <style>
                         body {
                             margin: 0;
@@ -196,20 +194,17 @@
                             height: 100vh;
                             background-color: #000;
                         }
-                        #player {
+                        video {
                             width: 100%;
                             height: 100%;
                         }
                     </style>
                 </head>
                 <body>
-                    <div id="player"></div>
-                    <script>
-                        const player = new Playerjs({
-                            id: "player",
-                            file: "${streamUrl}"
-                        });
-                    </script>
+                    <video controls autoplay>
+                        <source src="${streamUrl}" type="application/x-mpegURL">
+                        Your browser does not support the video tag.
+                    </video>
                 </body>
                 </html>
             `);
