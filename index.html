@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KANEKITV</title>
+    <title>OnePlayer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -102,11 +102,17 @@
             }
         }
     </style>
+        .channel-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">KANEKITV</div>
+            <div class="logo">OnePlayer</div>
             <div class="menu">
                 <div class="menu-item">📻 Emisoras</div>
                 <div class="menu-item">🔞 Adultos</div>
@@ -121,7 +127,7 @@
 
     <script>
         const channels = [
-            {name: 'TELEFUTURO', color: '#ffff00', logo: 'https://grupovierci.brightspotcdn.com/dims4/default/26b9e86/2147483647/strip/true/crop/1777x1790+0+0/resize/800x806!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0e%2Fb6%2F257502f9436b86d576eb823654f6%2Flogo-tf.png'},
+            {name: 'ABC TV', color: '#ffff00', logo: '🅰️'},
             {name: 'C9N', color: '#ff0000', logo: '9️⃣'},
             {name: 'Costanera TV', color: '#ffff00', logo: '📺', web: true},
             {name: 'Farra Play', color: '#00ff00', logo: '▶️'},
@@ -132,7 +138,8 @@
             {name: 'Lobo TV', color: '#ff8000', logo: '🐺'},
             {name: 'Mi TV Obligado', color: '#ff00ff', logo: '📺'},
             {name: 'Más TV Encarnación', color: '#00ff00', logo: '➕', web: true},
-            {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true}
+            {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true},
+            {name: 'Telefuturo', color: '#000000', logo: 'https://grupovierci.brightspotcdn.com/dims4/default/26b9e86/2147483647/strip/true/crop/1777x1790+0+0/resize/800x806!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0e%2Fb6%2F257502f9436b86d576eb823654f6%2Flogo-tf.png', isImage: true}
         ];
 
         const channelGrid = document.getElementById('channelGrid');
@@ -144,7 +151,14 @@
             
             const logo = document.createElement('div');
             logo.className = 'channel-logo';
-            logo.textContent = channel.logo;
+            if (channel.isImage) {
+                const img = document.createElement('img');
+                img.src = channel.logo;
+                img.alt = channel.name;
+                logo.appendChild(img);
+            } else {
+                logo.textContent = channel.logo;
+            }
             
             const name = document.createElement('div');
             name.className = 'channel-name';
