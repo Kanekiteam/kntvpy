@@ -1,0 +1,96 @@
+const defaultStream = 'http://c24u.xyz:8080/yosoyodi7/odielguapo/332991.m3u8';
+const channels = [
+    {name: 'ABC TV', color: '#ffff00', logo: '🅰️', stream: defaultStream},
+    {name: 'C9N', color: '#ff0000', logo: '9️⃣', stream: defaultStream},
+    {name: 'Costanera TV', color: '#ffff00', logo: '📺', web: true, stream: defaultStream},
+    {name: 'Farra Play', color: '#00ff00', logo: '▶️', stream: defaultStream},
+    {name: 'GEN', color: '#ffffff', logo: 'GEN', web: true, stream: defaultStream},
+    {name: 'Hei', color: '#00ffff', logo: 'HEI', web: true, stream: defaultStream},
+    {name: 'Lambaré TV', color: '#0000ff', logo: '📺', stream: defaultStream},
+    {name: 'Latele', color: '#ffffff', logo: '🖥️', stream: defaultStream},
+    {name: 'Lobo TV', color: '#ff8000', logo: '🐺', stream: defaultStream},
+    {name: 'Mi TV Obligado', color: '#ff00ff', logo: '📺', stream: defaultStream},
+    {name: 'Más TV Encarnación', color: '#00ff00', logo: '➕', web: true, stream: defaultStream},
+    {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true, stream: defaultStream},
+    {name: 'Telefuturo', color: '#000000', logo: 'https://grupovierci.brightspotcdn.com/dims4/default/26b9e86/2147483647/strip/true/crop/1777x1790+0+0/resize/800x806!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0e%2Fb6%2F257502f9436b86d576eb823654f6%2Flogo-tf.png', isImage: true, stream: 'https://oneplayer.xyz/scrap/telefuturo.php?.m3u8'}
+];
+
+const channelGrid = document.getElementById('channelGrid');
+
+channels.forEach(channel => {
+    const channelDiv = document.createElement('div');
+    channelDiv.className = 'channel';
+    channelDiv.style.backgroundColor = channel.color;
+    
+    const logo = document.createElement('div');
+    logo.className = 'channel-logo';
+    if (channel.isImage) {
+        const img = document.createElement('img');
+        img.src = channel.logo;
+        img.alt = channel.name;
+        logo.appendChild(img);
+    } else {
+        logo.textContent = channel.logo;
+    }
+    
+    const name = document.createElement('div');
+    name.className = 'channel-name';
+    name.textContent = channel.name;
+    
+    channelDiv.appendChild(logo);
+    channelDiv.appendChild(name);
+    
+    if (channel.web) {
+        const webLabel = document.createElement('div');
+        webLabel.className = 'web-label';
+        webLabel.textContent = 'Web';
+        channelDiv.appendChild(webLabel);
+    }
+
+    channelDiv.addEventListener('click', () => {
+        openPlayer(channel.stream);
+    });
+    
+    channelGrid.appendChild(channelDiv);
+});
+
+function openPlayer(streamUrl) {
+    const playerWindow = window.open('', 'Player', 'width=800,height=600');
+    playerWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Player</title>
+            <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    height: 100vh;
+                    background-color: #000;
+                }
+                #back-button {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    z-index: 1000;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    color: white;
+                    border: none;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+                #player {
+                    width: 100%;
+                    height: 100%;
+                }
+            </style>
+        </head>
+        <body>
+            <button id="back-button" onclick="window.close()">← Volver</button>
+            <video id="player" controls></video>
+            <script src="https://cdn.p
