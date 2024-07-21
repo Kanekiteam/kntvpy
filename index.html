@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNTV</title>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
+    <title>OnePlayer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -75,11 +74,6 @@
             justify-content: center;
             font-size: 40px;
         }
-        .channel-logo img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
         .channel-name {
             position: absolute;
             bottom: 5px;
@@ -108,11 +102,17 @@
             }
         }
     </style>
+        .channel-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">KNTV</div>
+            <div class="logo">OnePlayer</div>
             <div class="menu">
                 <div class="menu-item">📻 Emisoras</div>
                 <div class="menu-item">🔞 Adultos</div>
@@ -125,24 +125,21 @@
         </div>
     </div>
 
-    <script src="https://cdn.plyr.io/3.7.3/plyr.polyfilled.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-    <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
     <script>
         const channels = [
-            {name: 'ABC TV', color: '#ffff00', logo: '🅰️', stream: 'link1.m3u8'},
-            {name: 'C9N', color: '#ff0000', logo: '9️⃣', stream: 'link2.m3u8'},
-            {name: 'Costanera TV', color: '#ffff00', logo: '📺', web: true, stream: 'link3.m3u8'},
-            {name: 'Farra Play', color: '#00ff00', logo: '▶️', stream: 'link4.m3u8'},
-            {name: 'GEN', color: '#ffffff', logo: 'GEN', web: true, stream: 'link5.m3u8'},
-            {name: 'Hei', color: '#00ffff', logo: 'HEI', web: true, stream: 'link6.m3u8'},
-            {name: 'Lambaré TV', color: '#0000ff', logo: '📺', stream: 'link7.m3u8'},
-            {name: 'Latele', color: '#ffffff', logo: '🖥️', stream: 'link8.m3u8'},
-            {name: 'Lobo TV', color: '#ff8000', logo: '🐺', stream: 'link9.m3u8'},
-            {name: 'Mi TV Obligado', color: '#ff00ff', logo: '📺', stream: 'link10.m3u8'},
-            {name: 'Más TV Encarnación', color: '#00ff00', logo: '➕', web: true, stream: 'link11.m3u8'},
-            {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true, stream: 'link12.m3u8'},
-            {name: 'Telefuturo', color: '#000000', logo: 'png', isImage: true, stream: 'https://oneplayer.xyz/scrap/telefuturo.php?.m3u8'}
+            {name: 'ABC TV', color: '#ffff00', logo: '🅰️'},
+            {name: 'C9N', color: '#ff0000', logo: '9️⃣'},
+            {name: 'Costanera TV', color: '#ffff00', logo: '📺', web: true},
+            {name: 'Farra Play', color: '#00ff00', logo: '▶️'},
+            {name: 'GEN', color: '#ffffff', logo: 'GEN', web: true},
+            {name: 'Hei', color: '#00ffff', logo: 'HEI', web: true},
+            {name: 'Lambaré TV', color: '#0000ff', logo: '📺'},
+            {name: 'Latele', color: '#ffffff', logo: '🖥️'},
+            {name: 'Lobo TV', color: '#ff8000', logo: '🐺'},
+            {name: 'Mi TV Obligado', color: '#ff00ff', logo: '📺'},
+            {name: 'Más TV Encarnación', color: '#00ff00', logo: '➕', web: true},
+            {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true},
+            {name: 'Telefuturo', color: '#000000', logo: 'https://grupovierci.brightspotcdn.com/dims4/default/26b9e86/2147483647/strip/true/crop/1777x1790+0+0/resize/800x806!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0e%2Fb6%2F257502f9436b86d576eb823654f6%2Flogo-tf.png', isImage: true}
         ];
 
         const channelGrid = document.getElementById('channelGrid');
