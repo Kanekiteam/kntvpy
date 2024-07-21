@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -130,20 +129,19 @@
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
     <script>
-        const defaultStream = 'http://c24u.xyz:8080/yosoyodi7/odielguapo/332991.m3u8';
         const channels = [
-            {name: 'ABC TV', color: '#ffff00', logo: '🅰️', stream: defaultStream},
-            {name: 'C9N', color: '#ff0000', logo: '9️⃣', stream: defaultStream},
-            {name: 'Costanera TV', color: '#ffff00', logo: '📺', web: true, stream: defaultStream},
-            {name: 'Farra Play', color: '#00ff00', logo: '▶️', stream: defaultStream},
-            {name: 'GEN', color: '#ffffff', logo: 'GEN', web: true, stream: defaultStream},
-            {name: 'Hei', color: '#00ffff', logo: 'HEI', web: true, stream: defaultStream},
-            {name: 'Lambaré TV', color: '#0000ff', logo: '📺', stream: defaultStream},
-            {name: 'Latele', color: '#ffffff', logo: '🖥️', stream: defaultStream},
-            {name: 'Lobo TV', color: '#ff8000', logo: '🐺', stream: defaultStream},
-            {name: 'Mi TV Obligado', color: '#ff00ff', logo: '📺', stream: defaultStream},
-            {name: 'Más TV Encarnación', color: '#00ff00', logo: '➕', web: true, stream: defaultStream},
-            {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true, stream: defaultStream},
+            {name: 'ABC TV', color: '#ffff00', logo: '🅰️', stream: 'link1.m3u8'},
+            {name: 'C9N', color: '#ff0000', logo: '9️⃣', stream: 'link2.m3u8'},
+            {name: 'Costanera TV', color: '#ffff00', logo: '📺', web: true, stream: 'link3.m3u8'},
+            {name: 'Farra Play', color: '#00ff00', logo: '▶️', stream: 'link4.m3u8'},
+            {name: 'GEN', color: '#ffffff', logo: 'GEN', web: true, stream: 'link5.m3u8'},
+            {name: 'Hei', color: '#00ffff', logo: 'HEI', web: true, stream: 'link6.m3u8'},
+            {name: 'Lambaré TV', color: '#0000ff', logo: '📺', stream: 'link7.m3u8'},
+            {name: 'Latele', color: '#ffffff', logo: '🖥️', stream: 'link8.m3u8'},
+            {name: 'Lobo TV', color: '#ff8000', logo: '🐺', stream: 'link9.m3u8'},
+            {name: 'Mi TV Obligado', color: '#ff00ff', logo: '📺', stream: 'link10.m3u8'},
+            {name: 'Más TV Encarnación', color: '#00ff00', logo: '➕', web: true, stream: 'link11.m3u8'},
+            {name: 'Noticias Paraguay', color: '#ff0000', logo: 'NPY', web: true, stream: 'link12.m3u8'},
             {name: 'Telefuturo', color: '#000000', logo: 'https://grupovierci.brightspotcdn.com/dims4/default/26b9e86/2147483647/strip/true/crop/1777x1790+0+0/resize/800x806!/quality/90/?url=https%3A%2F%2Fk2-prod-grupo-vierci.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0e%2Fb6%2F257502f9436b86d576eb823654f6%2Flogo-tf.png', isImage: true, stream: 'https://oneplayer.xyz/scrap/telefuturo.php?.m3u8'}
         ];
 
@@ -201,20 +199,10 @@
                             margin: 0;
                             padding: 0;
                             display: flex;
-                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
                             height: 100vh;
                             background-color: #000;
-                        }
-                        #back-button {
-                            position: absolute;
-                            top: 10px;
-                            left: 10px;
-                            z-index: 1000;
-                            background-color: rgba(0, 0, 0, 0.5);
-                            color: white;
-                            border: none;
-                            padding: 10px;
-                            cursor: pointer;
                         }
                         #player {
                             width: 100%;
@@ -223,7 +211,6 @@
                     </style>
                 </head>
                 <body>
-                    <button id="back-button" onclick="window.close()">← Volver</button>
                     <video id="player"></video>
                     <script src="https://cdn.plyr.io/3.7.3/plyr.polyfilled.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
