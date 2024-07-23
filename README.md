@@ -1,4 +1,4 @@
-DMCA
+‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ DMCA
 Somos un proveedor de servicios de Internet que ofrece una plataforma que sólo muestra enlaces a contenidos audiovisuales ubicados en servidores de terceros y proveídos y / o transmitidos por terceros. Nadie puede responsabilizar de alojar contenido con copyright ya que nosotros no alojamos ningún contenido con derechos de autor ni tampoco transmitimos ningún contenido audiovisual.
 
 Por favor: Averigüe bien en qué sitio web están realmente alojados sus archivos, o contenido audiovisual antes de culparnos de infrigir derechos de autor.
