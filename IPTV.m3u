@@ -35,3 +35,7 @@ http://45.166.92.22:58001/play/a00p/index.m3u8
 http://45.166.92.22:58001/play/a05u/index.m3u8
 #EXTINF:0 tvg-id="DEPORTES"tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVDEvKPkXCk12sInBiof9FXX7OZwaJT0-vg&usqp=CAU" group-title="DEPORTES",ESPN2
 http://45.166.92.22:58001/play/a05u/index.m3u8
+#EXTINF:0 tvg-id="DEPORTES"tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVDEvKPkXCk12sInBiof9FXX7OZwaJT0-vg&usqp=CAU" group-title="DEPORTES",ESPN3
+http://45.166.92.22:58001/play/a05v/index.m3u8
+#EXTINF:0 tvg-id="DEPORTES"tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxVDEvKPkXCk12sInBiof9FXX7OZwaJT0-vg&usqp=CAU" group-title="DEPORTES",ESPN6
+http://45.166.92.22:58001/play/a05x/index.m3u8
