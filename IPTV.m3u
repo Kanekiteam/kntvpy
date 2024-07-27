@@ -1,9 +1,25 @@
 #EXTM3U
 
-#EXTINF:-0 tvg-id="Trece.py" tvg-logo="https://media.trece.com.py/sites/2/2022/06/logo-300x136-1.jpg" group-title="Paraguay",TRECE
-https://rds3gen.desdeparaguay.net/trecetv/trecetv_alta/playlist.m3u8
-#EXTINF:-0 tvg-id="Telefuturo.py" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/46/LogoTFFlat.png" group-title="Paraguay", TELEFUTURO
-https://c24u.xyz:8080/yosoyodi7/odielguapo/334039.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="PY: ABC TV" tvg-logo="" group-title="PARAGUAY",PY: ABC TV
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/158520
+#EXTINF:-1 tvg-id="13C.cl" tvg-name="PY: TELEFUTURO HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d4/Logo_telefuturo.jpg" group-title="PARAGUAY",PY: TELEFUTURO HD
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/2403
+#EXTINF:-1 tvg-id="PAR | La Tele" tvg-name="PY: GEN TV" tvg-logo="https://appnew.megainfoapp.com/files/1/gen.png" group-title="PARAGUAY",PY: GEN TV
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/2404
+#EXTINF:-1 tvg-id="PAR | C9N" tvg-name="PY: C9N" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9e/Canal_9_Noticias.jpg" group-title="PARAGUAY",PY: C9N
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/2513
+#EXTINF:-1 tvg-id="PAR | Noticias PY" tvg-name="PY: NPY" tvg-logo="data:image/png;base64,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" group-title="PARAGUAY",PY: NPY
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/623
+#EXTINF:-1 tvg-id="Paravision.py" tvg-name="PY: PARAVISION" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f1/Paravision.jpg" group-title="PARAGUAY",PY: PARAVISION
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/2512
+#EXTINF:-1 tvg-id="13C.cl" tvg-name="PY: PARAGUAY TV" tvg-logo="" group-title="PARAGUAY",PY: PARAGUAY TV
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/624
+#EXTINF:-1 tvg-id="" tvg-name="PY: UNICANAL" tvg-logo="" group-title="PARAGUAY",PY: UNICANAL
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/625
+#EXTINF:-1 tvg-id="SNT.py" tvg-name="PY: SNT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/af/SNT_LOGO.jpg" group-title="PARAGUAY",PY: SNT
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/626
+#EXTINF:-1 tvg-id="PAR | Sur Tv" tvg-name="PY: SUR" tvg-logo="https://cdn.mitvstatic.com/channels/116c52f1-8f55-4325-af6d-ab11f98e81d5_m.jpg" group-title="PARAGUAY",PY: SUR
+http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/627
 #EXTINF:-1 tvg-id="STAR CHANNEL" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Star_Channel_2021.png" group-title="Premium⭐",STAR CHANNEL
 http://45.166.92.22:58001/play/a048/index.m3u8
 #EXTINF:-2 tvg-id="HBO" tvg-logo="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/langes-640px-HBO_logo.svg.png&w=640&q=50" group-title="Premium⭐",HBO SD
