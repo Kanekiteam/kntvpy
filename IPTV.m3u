@@ -43,3 +43,5 @@ http://45.166.92.22:58001/play/a049/index.m3u8 Latino
 http://45.166.92.22:58001/play/a02c/index.m3u8
 #EXTINF:0 tvg-id="tnt" group-title="Channels",TNT HD
 http://45.166.92.22:58001/play/a013/index.m3u8
+#EXTINF:0 tvg-id="DEPORTES" group-title="DEPORTES",ESPN HD
+http://45.166.92.22:58001/play/a05u/index.m3u8
