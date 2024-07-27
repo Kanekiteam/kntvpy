@@ -31,17 +31,5 @@ http://45.166.92.22:58001/play/a049/index.m3u8
 #EXTINF:0 tvg-id="A&E"tvg-logo="https://logodix.com/logo/2107335.png" group-title="Premium⭐",A&E SD
 http://45.166.92.22:58001/play/a00p/index.m3u8
 #EXTINF:0 tvg-id="AXN.it"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d0/AXN_Logo_2015.png" group-title="Premium⭐",AXN SD
-http://181.78.4.186:8000/play/a0ha/index.m3u8
-#EXTINF:0 tvg-id="animal-hd" group-title="x",Animal Planet HD
-http://45.166.92.22:58001/play/a00m/index.m3u8
-#EXTINF:0 tvg-id="Antena3.ro" group-title="Channels",Antena 3
-http://45.166.92.22:58001/play/a041/index.m3u8
-#EXTINF:0 tvg-id="HD.mx" group-title="Channels", HD
-http://45.166.92.22:58001/play/a04b/index.m3u8
-#EXTINF:0 tvg-id="CineLatino.mx" group-title="Channels",#EXTINF:0 tvg-id="WarnerHD.mx" group-title="Channels",WARNER HD
-http://45.166.92.22:58001/play/a049/index.m3u8 Latino
-http://45.166.92.22:58001/play/a02c/index.m3u8
-#EXTINF:0 tvg-id="tnt" group-title="Channels",TNT HD
-http://45.166.92.22:58001/play/a013/index.m3u8
 #EXTINF:0 tvg-id="DEPORTES" group-title="DEPORTES",ESPN HD
 http://45.166.92.22:58001/play/a05u/index.m3u8
