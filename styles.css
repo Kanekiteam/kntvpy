@@ -1,0 +1,57 @@
+css
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.back-arrow {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-icon {
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.channel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.channel {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.channel:hover {
+    border: 2px solid white;
+    transform: translateY(-5px);
+}
+
+.channel img {
+    max-width: 100%;
+    height: auto;
+}
