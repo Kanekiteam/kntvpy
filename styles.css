@@ -1,49 +1,70 @@
 :root {
-  scroll-behavior: smooth;
-  display: grid;
-  place-items: center;
-  background-color: #303030;
-  color: white;
+    --bg-color: rgba(48, 48, 48, 0.9);
+    --channel-bg: #202020;
+    --channel-hover-border: white;
+    --text-color: white;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-  text-align: center;
-  margin: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .channels {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 }
 
 .channel {
-  background-color: #202020;
-  padding: 10px;
-  border-radius: 8px;
-  transition: transform 0.3s, border 0.3s;
+    background-color: var(--channel-bg);
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, border 0.3s;
+    position: relative;
 }
 
 .channel img {
-  max-width: 100%;
-  border-radius: 4px;
+    max-width: 100%;
+    border-radius: 4px;
 }
 
 .channel p {
-  margin: 10px 0 0;
-  font-size: 14px;
+    margin: 10px 0 0;
+    font-size: 14px;
 }
 
-.channel:hover {
-  transform: scale(1.05);
-  border: 2px solid white;
+.channel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.channel:hover::after {
+    border-color: var(--channel-hover-border);
+    transform: translateY(-5px);
 }
