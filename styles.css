@@ -3,6 +3,9 @@
     --channel-bg: #202020;
     --channel-hover-border: white;
     --text-color: white;
+    --neon-color-1: #0ff;
+    --neon-color-2: #f0f;
+    --neon-color-3: #ff0;
 }
 
 body {
@@ -22,16 +25,24 @@ body {
     background-color: var(--bg-color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 1200px;
 }
 
 h1 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.neon-text {
+    color: var(--neon-color-1);
+    animation: neon 1.5s infinite alternate;
 }
 
 .channels {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
 }
 
@@ -68,4 +79,13 @@ h1 {
 .channel:hover::after {
     border-color: var(--channel-hover-border);
     transform: translateY(-5px);
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px var(--neon-color-1), 0 0 20px var(--neon-color-1), 0 0 30px var(--neon-color-1), 0 0 40px var(--neon-color-2), 0 0 70px var(--neon-color-2), 0 0 80px var(--neon-color-3), 0 0 100px var(--neon-color-3), 0 0 150px var(--neon-color-3);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--neon-color-1), 0 0 10px var(--neon-color-1), 0 0 15px var(--neon-color-1), 0 0 20px var(--neon-color-2), 0 0 35px var(--neon-color-2), 0 0 40px var(--neon-color-3), 0 0 50px var(--neon-color-3), 0 0 75px var(--neon-color-3);
+    }
 }
