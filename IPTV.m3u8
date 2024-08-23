@@ -214,3 +214,8 @@ http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/451
 http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/15728
 #EXTINF:-1 tvg-id="WarnerChannel.mx" tvg-name="WARNER HD DUAL" tvg-logo="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0000/3653/brand.gif?itok=oMeBwM2h" group-title="CINE",WARNER HD DUAL
 http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/386
+
+#EXTINF:-3 tvg-id="INFANTILES" tvg-logo="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/langes-640px-HBO_logo.svg.png&w=640&q=50" group-title="Infantil👶",Disney Channel
+http://209.126.106.30:8081/live/cfe348a284974881b7db90c338a05a09/f262025569a346b5900f3f9a7f963d46/36.m3u8
+#EXTINF:-3 tvg-id="HBO" tvg-logo="https://static.wikia.nocookie.net/hbo-family/images/5/51/HBO_Family.png/revision/latest/smart/width/386/height/259?cb=20200629025129" group-title="Premium⭐",HBO FAMILY SD
+http://181.78.4.186:8000/play/a0eh/index.m3u8
