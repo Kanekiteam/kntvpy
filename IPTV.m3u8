@@ -22,11 +22,11 @@ http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/626
 http://tecnozone.site:8090/Gla23TV-YY/DYss16-aA-/627
 #EXTINF:-1 tvg-id="STAR CHANNEL" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/65/Star_Channel_2021.png" group-title="Premium⭐",STAR CHANNEL
 http://45.166.92.22:58001/play/a048/index.m3u8
-#EXTINF:-2 tvg-id="HBO" tvg-logo="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/langes-640px-HBO_logo.svg.png&w=640&q=50" group-title="Premium⭐",HBO SD
+#EXTINF:-2 tvg-id="HBO" tvg-logo="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/langes-640px-HBO_logo.svg.png&w=640&q=50" group-title="Premium⭐",HBO
 http://181.78.4.186:8000/play/a0h7/index.m3u8
 #EXTINF:-2 tvg-id="HBO" tvg-logo="https://static.wikia.nocookie.net/hbo-family/images/5/51/HBO_Family.png/revision/latest/smart/width/386/height/259?cb=20200629025129" group-title="Premium⭐",HBO FAMILY SD
 http://181.78.4.186:8000/play/a0eh/index.m3u8
-#EXTINF:-2 tvg-id="HBO" tvg-logo="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/langes-640px-HBO_logo.svg.png&w=640&q=50" group-title="Premium⭐",HBO SD
+#EXTINF:-2 tvg-id="HBO" tvg-logo="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/langes-640px-HBO_logo.svg.png&w=640&q=50" group-title="Premium⭐",HBO
 http://181.78.4.186:8000/play/a0h7/index.m3u8
 #EXTINF:-2 tvg-id="HBO" tvg-logo="https://static.wikia.nocookie.net/hbo-family/images/5/51/HBO_Family.png/revision/latest/smart/width/386/height/259?cb=20200629025129" group-title="Premium⭐",HBO FAMILY HD
 http://51.79.81.69:8080/live/ffaeb25c809f4b6b9dd250982a448fd2/5f5191e5599e4ad58ad3699498f018cd/7.m3u8
