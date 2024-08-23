@@ -36,7 +36,7 @@ http://181.78.4.186:8000/play/a0ef/index.m3u8
 http://181.78.4.186:8000/play/a0eg/index.m3u8
 #EXTINF:5 tvg-id="HBOPACK"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/HBO2_logo.png" group-title="Premium⭐",HBO2 SD
 http://181.78.4.186:8000/play/a0ee/index.m3u8
-#EXTINF:0 tvg-id="set"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/Sony_Channel_Logo.png" group-title="Premium⭐",SONY SD
+#EXTINF:0 tvg-id="Sony"tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/Sony_Channel_Logo.png" group-title="Premium⭐",SONY SD
 http://181.78.4.186:8000/play/a0h9/index.m3u8
 #EXTINF:0 tvg-id="SpaceHD.mx"tvg-logo="https://i.pinimg.com/originals/d6/6b/b5/d66bb576495837a6336a136895c0ee31.png" group-title="Premium⭐",SPACE SD
 http://181.78.4.186:8000/play/a0hb/index.m3u8
